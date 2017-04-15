@@ -41,7 +41,7 @@ X = [8, 9, 2, 3, 1, 5, 7, 6, 4] .
 ```
 CL-USER> (load "solve")
 T
-CL-USER> (test-all)
+CL-USER> (run-tests)
 T
 CL-USER> (solve)
 ...list of solutions...
