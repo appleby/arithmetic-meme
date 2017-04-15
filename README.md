@@ -52,7 +52,7 @@ CL-USER> (solve)
 Here is a table showing the runtimes of the various solutions when run on my aging laptop. They range from "pretty fast" when using the [clpfd][clpfd] library on SICStus to "dog slow" when using the [clpq][clpqr] library on SWI Prolog. In fairness, part of the reason the SWI Prolog solutions are slow is that I still have no idea how to write Prolog.
 
 | variant                            | SWI Prolog | SICStus |
-|------------------------------------+------------+---------|
+|------------------------------------|------------|---------|
 | normal_precedence_constraint_clpfd |      6.236 |   0.150 |
 | linear_precedence_constraint_clpfd |      3.360 |   0.060 |
 | normal_precedence_constraint_clpq  |     62.731 |  12.230 |
@@ -61,10 +61,9 @@ Here is a table showing the runtimes of the various solutions when run on my agi
 This repo also contains a reference solution in lisp. The lisp solution is a brute-force search over the 9! possible input permutations, and makes no attempt to be fast.
 
 | variant                                  |  SBCL | CLISP |   CCL |
-|------------------------------------------+-------+-------+-------|
+|------------------------------------------|-------|-------|-------|
 | normal-precedence-constraint-satisfied-p | 0.596 |  2.12 | 0.977 |
 | linear-precedence-constraint-satisfied-p | 0.722 |  3.13 | 1.217 |
-
 
 
 [puzzle]: https://www.theguardian.com/science/alexs-adventures-in-numberland/2015/may/20/can-you-do-the-maths-puzzle-for-vietnamese-eight-year-olds-that-has-stumped-parents-and-teachers
